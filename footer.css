@@ -1,0 +1,32 @@
+footer a {
+  text-decoration: none;
+  color: rgb(241, 241, 241);
+}
+footer b {
+  display: block;
+  color: rgb(137, 136, 136);
+}
+footer em {
+  font-style: italic;
+}
+footer .content {
+  gap: 1em;
+  width: 98%;
+  display: grid;
+  padding: 3em 1%;
+  margin: 0 auto;
+  max-width: 992px;
+  border-top: 1px solid rgb(241, 241, 241);
+  border-bottom: 1px solid rgb(241, 241, 241);
+  grid-template-columns: 1fr 1fr 1fr;
+}
+footer .content a,
+footer .content b {
+  font-weight: 700;
+  font-size: 1.125em;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+footer .content nav ul li {
+  list-style-type: none;
+}
