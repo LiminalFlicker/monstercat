@@ -9,7 +9,11 @@
 
 .tracklist {
   color: #fdfdfd;
+  display: flex;
+  flex-direction: column;
   background-color: black;
+  max-width: fit-content;
+  margin: 48px;
 }
 
 .tracklist small {
@@ -39,6 +43,7 @@
 .musicvideo {
   color: #fdfdfd;
   background-color: black;
+  margin: 48px;
 }
 
 /* .musicvideo_header {
