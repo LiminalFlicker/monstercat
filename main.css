@@ -25,6 +25,10 @@ body {
       format("woff");
 }
 
+.streamIt {
+  margin: 48px;
+}
+
 .tracklist {
   color: #fdfdfd;
   display: flex;
@@ -43,6 +47,7 @@ body {
   font-size: 18px;
 }
 
+.streamIt_header,
 .tracklist_header,
 .musicvideo_header {
   text-transform: uppercase;
@@ -50,7 +55,7 @@ body {
   font-weight: 400;
   letter-spacing: 0.1em;
   font-family: "Monument Extended", "Helvetica", Arial, sans-serif;
-  font-size: 35px;
+  font-size: 20px;
   line-height: 1;
   margin-block-start: 0.83em;
   margin-block-end: 0.83em;
@@ -66,6 +71,39 @@ body {
   color: #fdfdfd;
   background-color: black;
   margin: 48px;
+}
+
+.streamIt_container {
+  box-sizing: content-box;
+  display: flex;
+  width: 340px;
+  height: 45.5px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+  background-color: aqua;
+}
+
+.mcPlayer {
+  width: 100px;
+  height: 35.5;
+  background-color: black;
+  border-style: solid;
+  border-left: solid 2px aqua;
+}
+
+.soundcloud,
+.bandcamp,
+.appleMusic,
+.youtube,
+.spotify {
+  width: 50px;
+  height: 35.5;
+  background-color: black;
+  border-style: solid;
+  border-color: aqua;
+  /* border-width: 1px; */
+  border-left: solid 2px aqua;
 }
 
 /* .musicvideo_header {
