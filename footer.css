@@ -1,4 +1,5 @@
-footer {
+.footer {
+  padding: 3em 0;
   color: #fdfdfd;
   background-color: black;
 }
@@ -29,28 +30,76 @@ footer .grid-1 {
   width: 98%;
   display: grid;
   margin: 0 auto;
-  padding: 3em 1%;
+  padding: 3em 0;
   max-width: 992px;
   border-top: 1px solid #fdfdfd;
   border-bottom: 1px solid #fdfdfd;
   grid-template-columns: 1fr 1fr 1fr;
-}
-footer .grid-1 a,
-footer .grid-1 b {
-  font-weight: 500;
-  font-size: 1.125em;
-  letter-spacing: 1.8px;
-  text-transform: uppercase;
-}
-footer .grid-1 nav ul li {
-  list-style-type: none;
 }
 footer .grid-2 {
   gap: 1em;
   width: 98%;
   display: grid;
   margin: 0 auto;
-  padding: 1em 1%;
+  padding: 1em 0;
   max-width: 992px;
   grid-template-columns: 1fr 1fr;
+}
+footer .flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+footer a,
+footer b {
+  font-weight: 500;
+  font-size: 1.125em;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+}
+footer .icon {
+  font-size: 125%;
+  margin: 0 0.25em;
+}
+footer nav ul li {
+  list-style-type: none;
+}
+footer form {
+  display: flex;
+  padding: 1em 0;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #383838;
+}
+footer form label {
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  position: absolute;
+  border: 0 !important;
+  padding: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+}
+footer form input {
+  border: none;
+  outline: none;
+  padding: 0.25em;
+  position: relative;
+  font-size: 1.125rem;
+  max-width: calc(100% - 70px);
+}
+footer form button {
+  width: 70px;
+  height: 30px;
+  border: none;
+  position: relative;
+  background-color: transparent;
+}
+footer form button:hover {
+  background-color: #fdfdfd;
+}
+footer form button:hover .icon {
+  color: #000000;
 }
