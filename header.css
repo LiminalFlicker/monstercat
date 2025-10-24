@@ -1,3 +1,150 @@
 .container {
   height: 800px;
 }
+
+/* ---------------------------------------------------- */
+/* -----------------------SVG-------------------------- */
+/* ---------------------------------------------------- */
+.side-nav {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  inset-inline-end: 70px;
+  top: 2%;
+  /* transform: translateY(-50%); */
+  gap: 34px;
+  align-items: flex-end;
+}
+.icon {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  aspect-ratio: 1 / 1;
+  color: #cfcfcf;
+}
+.icon svg {
+  width: 40px;
+  aspect-ratio: 1 / 1;
+  stroke-width: 2;
+}
+.icon:hover {
+  color: #fff;
+}
+.icon:first-child {
+  margin-bottom: 52px;
+}
+
+.menu-btn {
+  display: none;
+}
+
+/* ---------------------------------------------------- */
+/* -------------------Media 680------------------------ */
+/* ---------------------------------------------------- */
+@media (max-width: 680px) {
+  .side-nav .icon {
+    display: none;
+  }
+
+  .side-nav {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
+    height: 72px;
+  }
+
+  .menu-btn {
+    display: grid;
+  }
+}
+/* ---------------------------------------------------- */
+/* ------------------Media 1184------------------------ */
+/* ---------------------------------------------------- */
+@media (max-width: 1184px) {
+  nav {
+    grid-column: 1 / -1;
+    width: 120vw;
+  }
+
+  .side-nav {
+    flex-direction: row;
+    flex-direction: row-reverse;
+    position: fixed;
+    top: 0px;
+    left: -10px;
+    width: 100vw;
+    /* right: 1%; */
+    /* left: 50%; */
+    /* transform: translateX(-50%);   */
+    gap: 56px;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 24px 24px;
+    border-radius: 12px;
+    backdrop-filter: blur(6px);
+  }
+
+  .icon:first-child {
+    display: none;
+  }
+
+  /* BUTTON */
+  .menu-btn {
+    position: fixed;
+    top: 16px;
+    right: 24px;
+    z-index: 9999;
+    display: grid;
+    place-items: center;
+    width: 60px;
+    aspect-ratio: 1 / 1;
+    border: none;
+    border-radius: 12px;
+    background: transparent;
+    /* backdrop-filter: blur(6px); */
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+
+  .menu-btn:hover {
+    background: rgba(0, 0, 0, 0.6);
+    transform: translateY(-1px);
+  }
+
+  .menu-btn:active {
+    transform: translateY(0);
+  }
+  /* ICON-BUTTON */
+  .icon-btn {
+    position: fixed; /* du hast das schon im Code */
+    top: 16px;
+    left: 1rem;
+    width: 64px; /* ↑ Button-Größe hier steuern */
+    height: 64px; /* gleich hoch wie breit */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.4);
+    border: none;
+    border-radius: 12px;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+
+  /* SVG im Button: etwas kleiner als der Button */
+  .icon-btn svg {
+    width: 36px; /* ↑ Icon-Größe hier steuern */
+    height: 36px;
+  }
+  .icon-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  header .icon-btn {
+    position: fixed;
+    top: 14px;
+    left: 1rem;
+  }
+}
