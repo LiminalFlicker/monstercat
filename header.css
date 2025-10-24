@@ -116,12 +116,12 @@
     transform: translateY(0);
   }
   /* ICON-BUTTON */
-  .icon-btn {
-    position: fixed; /* du hast das schon im Code */
+  /* .icon-btn {
+    position: fixed; 
     top: 16px;
     left: 1rem;
-    width: 64px; /* ↑ Button-Größe hier steuern */
-    height: 64px; /* gleich hoch wie breit */
+    width: 64px; 
+    height: 64px; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -133,9 +133,9 @@
     transition: background 0.2s ease;
   }
 
-  /* SVG im Button: etwas kleiner als der Button */
+  
   .icon-btn svg {
-    width: 36px; /* ↑ Icon-Größe hier steuern */
+    width: 36px; 
     height: 36px;
   }
   .icon-btn:hover {
@@ -146,5 +146,5 @@
     position: fixed;
     top: 14px;
     left: 1rem;
-  }
+  } */
 }
