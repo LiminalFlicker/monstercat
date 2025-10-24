@@ -1,3 +1,7 @@
+footer {
+  color: #fdfdfd;
+  background-color: black;
+}
 footer a {
   text-decoration: none;
   color: rgb(241, 241, 241);
@@ -7,26 +11,46 @@ footer b {
   color: rgb(137, 136, 136);
 }
 footer em {
+  display: block;
+  font-size: 0.875em;
   font-style: italic;
 }
-footer .content {
+footer small {
+  width: 98%;
+  margin: 0 auto;
+  display: block;
+  padding: 1em 1%;
+  max-width: 992px;
+  font-size: 0.865em;
+  text-align: center;
+}
+footer .grid-1 {
   gap: 1em;
   width: 98%;
   display: grid;
-  padding: 3em 1%;
   margin: 0 auto;
+  padding: 3em 1%;
   max-width: 992px;
-  border-top: 1px solid rgb(241, 241, 241);
-  border-bottom: 1px solid rgb(241, 241, 241);
+  border-top: 1px solid #fdfdfd;
+  border-bottom: 1px solid #fdfdfd;
   grid-template-columns: 1fr 1fr 1fr;
 }
-footer .content a,
-footer .content b {
-  font-weight: 700;
+footer .grid-1 a,
+footer .grid-1 b {
+  font-weight: 500;
   font-size: 1.125em;
   letter-spacing: 1.8px;
   text-transform: uppercase;
 }
-footer .content nav ul li {
+footer .grid-1 nav ul li {
   list-style-type: none;
+}
+footer .grid-2 {
+  gap: 1em;
+  width: 98%;
+  display: grid;
+  margin: 0 auto;
+  padding: 1em 1%;
+  max-width: 992px;
+  grid-template-columns: 1fr 1fr;
 }
