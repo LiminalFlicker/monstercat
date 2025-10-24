@@ -116,6 +116,10 @@ body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+  background-size: 256px;
+  background-repeat: repeat;
+  background-position: center;
+  background-image: url(./images/background-tile.webp);
 }
 .icon {
   font-family: "fontello";
